@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!--In the label field of fragment you can give the name that you want to show in the toolbar-->
+    <fragment
+        android:id="@+id/offlineFragment"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.OfflineDictations"
+        android:label="Offline Dictations"
+        tools:layout="@layout/fragment_dictations" >
+        <!-- <action
+             android:id="@+id/action_homeFragment_to_profileFragment"
+             app:destination="@id/profileFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/case_search"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.CaseSearchFragment"
+        android:label="Case Search"
+        tools:layout="@layout/fragment_case_search"/>
+
+    <fragment
+        android:id="@+id/schdules"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.ScheduleFragment"
+        android:label="Schedules"
+        tools:layout="@layout/fragment_schedule"/>
+    <fragment
+        android:id="@+id/more"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.CaseSearchFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_case_search"/>
+
+    <fragment
+        android:id="@+id/awaitingReprot"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.AwaitingReportFragment"
+        android:label="AwaitingReport"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/newMedicalRecords"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.NewMedicalRecords"
+        android:label="New Medical Records"
+        tools:layout="@layout/fragment_medical_records" />
+
+    <!--<fragment
+        android:id="@+id/profileFragment"
+        android:name="com.android.atr07.drawerwithbottomnavigation.fragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />-->
+
+
+
+</navigation>
